@@ -284,8 +284,7 @@ FEBio is an open-source nonlinear finite element solver developed specifically f
 
 ## Citation
 
-The source code is archived on Zenodo and can be cited using the following DOI:
+If you use this implementation in academic work, please cite the software and the associated publication.
 
-https://doi.org/10.5281/zenodo.22228993
+Cachot, U. (2026). Mechanobiological FEBio Plugin for Intervertebral Disc Modeling (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22228993
 
-The DOI corresponds to version 1.0.0 of the code used in the present study.
