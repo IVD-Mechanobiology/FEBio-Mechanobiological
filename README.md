@@ -302,6 +302,7 @@ The implementation is intended for the FEBio 4.4 API and may require modificatio
 
 FEBio is an open-source nonlinear finite element solver developed specifically for biomechanical applications. The official FEBio repository and releases are available on GitHub.
 
+---
 
 ## Citation
 
