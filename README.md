@@ -6,7 +6,7 @@ This repository contains a C++ implementation of a custom multiphasic material e
 
 The implementation was developed for research purposes in the context of computational mechanobiology of the intervertebral disc. The scientific objectives, mathematical formulation and associated equations, implementation strategy, and main simulation results are described in the associated publication:
 
-> Cachot, U., Kandil, K., Zaïri, F., Zaïri, F. (2026). A multiscale computational framework coupling poromechanics, metabolism, and matrix turnover to predict long-term evolution of intervertebral disc degeneration.
+> Cachot, U., Kandil, K., Zaïri, F., Zaïri, F., (2026). A multiscale computational framework coupling poromechanics, metabolism, and matrix turnover to predict long-term evolution of intervertebral disc degeneration.
 
 This repository provides the corresponding software implementation, including the custom material, reaction, diffusivity, and load-controller components required to reproduce and further develop the proposed mechanobiological framework.
 
@@ -313,7 +313,7 @@ If you use this software implementation in academic work, please cite the softwa
 
 If you refer to the scientific study and the mechanobiological model associated with this implementation, please cite the following publication:
 
-> Cachot, U., Kandil, K., Zaïri, F., Zaïri, F. (2026). A multiscale computational framework coupling poromechanics, metabolism, and matrix turnover to predict long-term evolution of intervertebral disc degeneration.
+> Cachot, U., Kandil, K., Zaïri, F., Zaïri, F., (2026). A multiscale computational framework coupling poromechanics, metabolism, and matrix turnover to predict long-term evolution of intervertebral disc degeneration.
 
 The software and the associated scientific publication should be cited separately depending on whether the reference is to the software implementation or to the scientific study and its results.
 
