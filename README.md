@@ -239,8 +239,8 @@ The mechanobiological implementation uses the following solute indexing througho
 
 | Solute index | Solute   | Role in the implementation |
 | -----------: | -------- | --------------------------- |
-| `0`          | Glucose  | Substrate for cellular metabolism |
-| `1`          | Lactate  | Metabolic by-product and substrate for aerobic metabolism |
+| `0`          | Glucose  | Substrate for cellular metabolism (aerobic and anaerobic) |
+| `1`          | Lactate  | Metabolic by-product for anaerobic metabolism |
 | `2`          | Oxygen   | Substrate for aerobic metabolism |
 | `3`          | Grade    | Fictitious solute used to represent the local/global degeneration state |
 
