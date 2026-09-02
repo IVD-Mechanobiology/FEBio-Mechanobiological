@@ -4,7 +4,11 @@ A custom FEBio material and reaction framework for the mechanobiological simulat
 
 This repository contains a C++ implementation of a custom multiphasic material extending the FEBio framework to couple **mechanics, solute transport, cellular metabolism, extracellular matrix turnover, fixed charge density evolution, and degeneration-dependent tissue properties**.
 
-The implementation was developed for research purposes in the context of computational mechanobiology of the intervertebral disc.
+The implementation was developed for research purposes in the context of computational mechanobiology of the intervertebral disc. The scientific objectives, mathematical formulation and associated equations, implementation strategy, and main simulation results are described in the associated publication:
+
+> Cachot, U., Kandil, K., Zaïri, F., Zaïri, F. (2026). A multiscale computational framework coupling poromechanics, metabolism, and matrix turnover to predict long-term evolution of intervertebral disc degeneration.
+
+This repository provides the corresponding software implementation, including the custom material, reaction, diffusivity, and load-controller components required to reproduce and further develop the proposed mechanobiological framework.
 
 ---
 
@@ -129,7 +133,7 @@ Gmax = 5.0
 
 ### 4. Aerobic metabolism
 
-`Aerobic_Reaction` implements oxygen consumption associated with aerobic cellular metabolism.
+`Aerobic_Reaction` implements glucose consumption associated with aerobic cellular metabolism.
 
 The reaction rate depends on:
 
@@ -229,6 +233,23 @@ Region-dependent parameters are used for cellular density and metabolic activity
 
 ---
 
+## Solute indexing
+
+The mechanobiological implementation uses the following solute indexing throughout the code:
+
+| Solute index | Solute   | Role in the implementation |
+| -----------: | -------- | --------------------------- |
+| `0`          | Glucose  | Substrate for cellular metabolism |
+| `1`          | Lactate  | Metabolic by-product and substrate for aerobic metabolism |
+| `2`          | Oxygen   | Substrate for aerobic metabolism |
+| `3`          | Grade    | Fictitious solute used to represent the local/global degeneration state |
+
+The code is explicitly written assuming this solute indexing. Changing the order of these solutes therefore requires corresponding modifications to the implementation.
+
+The `Grade` variable is introduced as a fictitious solute to provide a simple coupling between the local material-point formulation and the global degeneration state. Locally, it is treated within the solute framework; however, it is assigned an effectively infinite diffusivity and its value is prescribed through the Degeneration grade controller. This makes the grade spatially uniform and therefore effectively global, while allowing it to be accessed locally by the constitutive laws and material points.
+
+In addition to these four solutes, the multiphasic model also accounts for charged ionic species and reaction by-products associated with aerobic metabolism. These species are important for the complete description of the multiphasic system and contribute, in particular, to ionic and osmotic effects such as the osmotic pressure. They are therefore considered in the overall model formulation and reaction scheme, but they do not enter the mechanobiological constitutive and reaction laws implemented in this plugin and are consequently not explicitly described here.
+
 ## Source files
 
 Currently, the repository contains the main source and header files:
@@ -284,7 +305,15 @@ FEBio is an open-source nonlinear finite element solver developed specifically f
 
 ## Citation
 
-If you use this implementation in academic work, please cite the software and the associated publication.
+## Citation
 
-Cachot, U. (2026). Mechanobiological FEBio Plugin for Intervertebral Disc Modeling (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22228993
+If you use this software implementation in academic work, please cite the software using the following reference and DOI:
+
+> Cachot, U. (2026). Mechanobiological FEBio Plugin for Intervertebral Disc Modeling (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22228993
+
+If you refer to the scientific study and the mechanobiological model associated with this implementation, please cite the following publication:
+
+> Cachot, U., Kandil, K., Zaïri, F., Zaïri, F. (2026). A multiscale computational framework coupling poromechanics, metabolism, and matrix turnover to predict long-term evolution of intervertebral disc degeneration.
+
+The software and the associated scientific publication should be cited separately depending on whether the reference is to the software implementation or to the scientific study and its results.
 
