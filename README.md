@@ -16,6 +16,7 @@ provided by **Fahed Zaïri**.
  
 **Lead software developer and maintainer:** Ugo Cachot
  
+---
  
 ## Citation
  
@@ -290,6 +291,8 @@ The code is explicitly written assuming this solute indexing. Changing the order
 The `Grade` variable is introduced as a fictitious solute to provide a simple coupling between the local material-point formulation and the global degeneration state. Locally, it is treated within the solute framework; however, it is assigned an effectively infinite diffusivity and its value is prescribed through the Degeneration grade controller. This makes the grade spatially uniform and therefore effectively global, while allowing it to be accessed locally by the constitutive laws and material points.
 
 In addition to these four solutes, the multiphasic model also accounts for charged ionic species and reaction by-products associated with aerobic metabolism. These species are important for the complete description of the multiphasic system and contribute, in particular, to ionic and osmotic effects such as the osmotic pressure. They are therefore considered in the overall model formulation and reaction scheme, but they do not enter the mechanobiological constitutive and reaction laws implemented in this plugin and are consequently not explicitly described here.
+
+---
 
 ## Source files
 
