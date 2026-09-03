@@ -19,15 +19,15 @@ provided by **Fahed Zaïri**.
 ---
  
 ## Citation
- 
+
 If you use FEBio-Mechanobiological in your research, please cite both the
 software release and the associated scientific publication.
- 
+
 ### Software
- 
+
 Cachot, U., Kandil, K., Zaïri, F., & Zaïri, F. (2026).
 *FEBio-Mechanobiological* (Version 1.0.0).
-Zenodo. https://doi.org/10.5281/zenodo.22228993
+Zenodo. https://doi.org/10.5281/zenodo.22282696
  
 ### Associated publication
  
