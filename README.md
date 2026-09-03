@@ -1,14 +1,40 @@
-# Mechanobiological FEBio Plugin
-
-A custom FEBio material and reaction framework for the mechanobiological simulation of intervertebral disc (IVD) degeneration.
-
-This repository contains a C++ implementation of a custom multiphasic material extending the FEBio framework to couple **mechanics, solute transport, cellular metabolism, extracellular matrix turnover, fixed charge density evolution, and degeneration-dependent tissue properties**.
-
-The implementation was developed for research purposes in the context of computational mechanobiology of the intervertebral disc. The scientific objectives, mathematical formulation and associated equations, implementation strategy, and main simulation results are described in the associated publication:
-
-> Cachot, U., Kandil, K., Zaïri, F., Zaïri, F., (2026). A multiscale computational framework coupling poromechanics, metabolism, and matrix turnover to predict long-term evolution of intervertebral disc degeneration.
-
-This repository provides the corresponding software implementation, including the custom material, reaction, diffusivity, and load-controller components required to reproduce and further develop the proposed mechanobiological framework.
+## Authors and contributions
+ 
+FEBio-Mechanobiological is a FEBio plugin developed as part of the PhD research
+of **Ugo Cachot**. The software implements the mechanobiological framework
+developed within the associated research project under the scientific supervision
+of **Fahmi Zaïri** and **Karim Kandil**, with clinical and medical expertise
+provided by **Fahed Zaïri**.
+ 
+- **Ugo Cachot** — PhD researcher; methodology, model development, lead software
+ implementation, and numerical simulations.
+- **Fahmi Zaïri** — conceptualization, methodology, model development, and
+ scientific supervision.
+- **Karim Kandil** — conceptualization, methodology, model development, and
+ scientific supervision.
+- **Fahed Zaïri** — clinical and medical expertise and interpretation.
+ 
+**Lead software developer and maintainer:** Ugo Cachot
+ 
+ 
+## Citation
+ 
+If you use FEBio-Mechanobiological in your research, please cite both the
+software release and the associated scientific publication.
+ 
+### Software
+ 
+Cachot, U., Kandil, K., Zaïri, F., & Zaïri, F. (2026).
+*FEBio-Mechanobiological* (Version 1.0.0).
+Zenodo. https://doi.org/10.5281/zenodo.22228993
+ 
+### Associated publication
+ 
+Cachot, U., Kandil, K., Zaïri, F., & Zaïri, F. (2026).
+*A multiscale computational framework coupling poromechanics, metabolism,
+and matrix turnover to predict long-term evolution of intervertebral disc
+degeneration*.
+International Journal of Engineering Science, in press.
 
 ---
 
@@ -32,6 +58,21 @@ The model includes:
 * a global degeneration grade derived from the local degeneration state of the nucleus pulposus.
 
 The implementation is intended to provide a mechanistic framework for long-term simulation of IVD degeneration.
+
+---
+
+## Requirements
+
+The implementation was developed and tested with:
+
+* **FEBio 4.4**
+* **Visual Studio 2022 Community**
+* **C++**
+* **FEBio SDK / FEBio source libraries**
+
+The implementation is intended for the FEBio 4.4 API and may require modifications to compile against other FEBio versions.
+
+FEBio is an open-source nonlinear finite element solver developed specifically for biomechanical applications. The official FEBio repository and releases are available on GitHub.
 
 ---
 
@@ -287,32 +328,5 @@ Contains the implementation of:
 * analytical reaction tangents;
 * degeneration-dependent diffusivity.
 
----
 
-## Requirements
-
-The implementation was developed and tested with:
-
-* **FEBio 4.4**
-* **Visual Studio 2022 Community**
-* **C++**
-* **FEBio SDK / FEBio source libraries**
-
-The implementation is intended for the FEBio 4.4 API and may require modifications to compile against other FEBio versions.
-
-FEBio is an open-source nonlinear finite element solver developed specifically for biomechanical applications. The official FEBio repository and releases are available on GitHub.
-
----
-
-## Citation
-
-If you use this software implementation in academic work, please cite the software using the following reference and DOI:
-
-> Cachot, U. (2026). Mechanobiological FEBio Plugin for Intervertebral Disc Modeling (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22228993
-
-If you refer to the scientific study and the mechanobiological model associated with this implementation, please cite the following publication:
-
-> Cachot, U., Kandil, K., Zaïri, F., Zaïri, F., (2026). A multiscale computational framework coupling poromechanics, metabolism, and matrix turnover to predict long-term evolution of intervertebral disc degeneration.
-
-The software and the associated scientific publication should be cited separately depending on whether the reference is to the software implementation or to the scientific study and its results.
 
