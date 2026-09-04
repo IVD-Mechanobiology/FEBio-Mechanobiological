@@ -27,7 +27,7 @@ software release and the associated scientific publication.
 
 Cachot, U., Kandil, K., Zaïri, F., & Zaïri, F. (2026).
 *FEBio-Mechanobiological* (Version 1.0.0).
-Zenodo. https://doi.org/10.5281/zenodo.22282843
+Zenodo.
  
 ### Associated publication
  
