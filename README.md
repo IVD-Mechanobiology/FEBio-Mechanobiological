@@ -132,9 +132,9 @@ $$
 
 where:
 
-* \(FCD_r\) is the referential fixed charge density;
-* \(S_{\mathrm{bio}}\) is the biosynthesis contribution;
-* \(D_{\mathrm{deg}}\) is the degradation contribution.
+$FCD_r$ is the referential fixed charge density;
+$S_{\mathrm{bio}}$ is the biosynthesis contribution;
+$D_{\mathrm{deg}}$ is the degradation contribution.
 
 The material also stores history variables through the custom material-point class `FEMechanobiologicalPoint`.
 
