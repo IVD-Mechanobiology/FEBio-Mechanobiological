@@ -35,7 +35,7 @@ Cachot, U., Kandil, K., Zaïri, F., & Zaïri, F. (2026).
 *A multiscale computational framework coupling poromechanics, metabolism,
 and matrix turnover to predict long-term evolution of intervertebral disc
 degeneration*.
-International Journal of Engineering Science, in press.
+
 
 ---
 
