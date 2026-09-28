@@ -26,7 +26,7 @@ software release and the associated scientific publication.
 ### Software
 
 Cachot, U., Kandil, K., Zaïri, F., & Zaïri, F. (2026).
-*FEBio-Mechanobiological* (Version 1.0.0).
+Mechanobiological FEBio plugin for long-term intervertebral disc degeneration modeling (Version 1.0.0).
 Zenodo.
  
 ### Associated publication
