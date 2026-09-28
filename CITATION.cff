@@ -4,7 +4,7 @@ message: "If you use this software, please cite both the software release and th
 title: "FEBio-Mechanobiological"
 type: software
 version: "1.0.0"
-date-released: "2026-09-03"
+date-released: "2026-09-28"
 
 authors:
   - family-names: "Cachot"
@@ -15,8 +15,6 @@ authors:
     given-names: "Fahmi"
   - family-names: "Zaïri"
     given-names: "Fahed"
-
-doi: "10.5281/zenodo.22282843"
 
 repository-code: "https://github.com/IVD-Mechanobiology/FEBio-Mechanobiological"
 
